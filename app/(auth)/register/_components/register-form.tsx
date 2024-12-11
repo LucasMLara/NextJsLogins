@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import Register from '../_actions/register';
 import { Button, buttonVariants } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -27,7 +28,7 @@ export default function RegisterForm() {
           <CardDescription>Crie uma conta gratuitamente</CardDescription>
         </CardHeader>
         <CardContent>
-          <form className="text-left ">
+          <form action={Register} className="text-left ">
             <div className="space-y-6">
               <div className="grid w-full max-w-sm items-center gap-1.5">
                 <Label htmlFor="name">Nome</Label>
