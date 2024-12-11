@@ -3,6 +3,7 @@
 import { Button, buttonVariants } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import Login from '../_actions/login';
 import {
   Card,
   CardContent,
@@ -23,7 +24,7 @@ export default function LoginForm() {
       </CardHeader>
       <CardContent>
         {' '}
-        <form className="text-left ">
+        <form  action={Login} className="text-left ">
           <div className="space-y-6">
             <div className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="email">Email</Label>
